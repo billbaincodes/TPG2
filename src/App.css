@@ -50,7 +50,7 @@ a:hover {
 
 
 .ui.comments .reply.form textarea {
-  background-color: darkred;
+  background-color: rgba(43, 0, 0, 0.363);
   color: white;
 }
 
@@ -58,6 +58,7 @@ a:hover {
 .ui.cards {
   justify-content: space-evenly;
   margin: 0;
+  width: 100%;
 }
 
 .ui.card,
@@ -91,21 +92,33 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(165, 0, 0);
 }
 
 .ui.menu {
-  background: rgb(255, 147, 147);
+  background: rgb(165, 0, 0);
   margin: 0;
 }
 
 .ui.items>.item>.content {
-  padding: 4%;
-  padding-bottom: 0;
+  margin-top: 0%;
+  padding: 1%;
   color: white;
+  background: rgba(139, 0, 0, .75);
+  border: 1px solid black;
 }
 
 .ui.comments {
-  padding: 4%;
-  padding-top: 0;
+  margin-top: 0%;
+  padding: 1%;
+  background: rgba(139, 0, 0, .75);
+  border: 1px solid black;
+}
+
+.ui.comments .comment .comments {
+  background: none;
+  border: none;
+}
+
+.ui.button {
+  color: rgb(100, 0, 0);
 }

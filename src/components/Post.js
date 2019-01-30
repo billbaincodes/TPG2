@@ -11,7 +11,7 @@ class Post extends Component {
     <img className="ui avatar image" src="https://adorbs-as-a-service.herokuapp.com/api/v1/50w/50h/" /> Elliot
   </div>
   <div className="image">
-    <img src="https://adorbs-as-a-service.herokuapp.com/api/v1/300w/400h/" />
+    <img src="https://adorbs-as-a-service.herokuapp.com/api/v1/400w/400h/" />
   </div>
   <div className="content">
     <span className="right floated">
@@ -20,12 +20,6 @@ class Post extends Component {
     </span>
     <i className="comment icon"></i>
     3 comments
-  </div>
-  <div className="extra content">
-    <div className="ui large transparent left icon input">
-      <i className="heart outline icon"></i>
-      <input type="text" placeholder="Add Comment..." />
-    </div>
   </div>
 </div>
     );
