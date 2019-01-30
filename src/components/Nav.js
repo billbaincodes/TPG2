@@ -21,7 +21,7 @@ export default class MenuExampleStackable extends Component {
           active={activeItem === 'features'}
           onClick={this.handleItemClick}
         >
-          Features
+          Feed
         </Menu.Item>
 
         <Menu.Item
@@ -29,11 +29,11 @@ export default class MenuExampleStackable extends Component {
           active={activeItem === 'testimonials'}
           onClick={this.handleItemClick}
         >
-          Testimonials
+          Profile
         </Menu.Item>
 
         <Menu.Item name='sign-in' active={activeItem === 'sign-in'} onClick={this.handleItemClick}>
-          Sign-in
+          Friends
         </Menu.Item>
       </Menu>
     )
