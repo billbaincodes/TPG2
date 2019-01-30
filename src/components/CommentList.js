@@ -11,15 +11,12 @@ const CommentList = () => (
   <Item.Group divided >
     <Item>
       <Item.Content>
-        <Item.Header as='a'>12 Years a Slave</Item.Header>
-        <Item.Meta>
-          <span className='cinema'>Union Square 14</span>
-        </Item.Meta>
+        <Item.Header as='a'>January 23, 2019</Item.Header>
         <Item.Description>You, a bobsleder!? That I'd like to see! Okay, I like a challenge. Good news, everyone! There's a report on TV with some very bad news! So I really am important? How I feel when I'm drunk is correct? It's a T. It goes "tuh".</Item.Description>
         <Item.Extra>
-          <Label>Kitty</Label>
-          <Label>Cute</Label>
-          <Label>Adorable</Label>
+          <Label>#kitty</Label>
+          <Label>#cute</Label>
+          <Label>#adorable</Label>
         </Item.Extra>
       </Item.Content>
     </Item>
@@ -30,7 +27,7 @@ const CommentList = () => (
     </Header>
 
     <Comment>
-      <Comment.Avatar src='https://adorbs-as-a-service.herokuapp.com/api/v1/100/100h/' />
+      <Comment.Avatar src='https://adorbs-as-a-service.herokuapp.com/api/v1/420/420h/' />
       <Comment.Content>
         <Comment.Author as='a'>Matt</Comment.Author>
         <Comment.Metadata>
@@ -44,7 +41,7 @@ const CommentList = () => (
     </Comment>
 
     <Comment>
-      <Comment.Avatar src='https://adorbs-as-a-service.herokuapp.com/api/v1/100/100h/' />
+      <Comment.Avatar src='https://adorbs-as-a-service.herokuapp.com/api/v1/420/420h/' />
       <Comment.Content>
         <Comment.Author as='a'>Elliot Fu</Comment.Author>
         <Comment.Metadata>
@@ -59,7 +56,7 @@ const CommentList = () => (
       </Comment.Content>
       <Comment.Group>
         <Comment>
-          <Comment.Avatar src='https://adorbs-as-a-service.herokuapp.com/api/v1/100/100h/' />
+          <Comment.Avatar src='https://adorbs-as-a-service.herokuapp.com/api/v1/420/420h/' />
           <Comment.Content>
             <Comment.Author as='a'>Jenny Hess</Comment.Author>
             <Comment.Metadata>
@@ -75,7 +72,7 @@ const CommentList = () => (
     </Comment>
 
     <Comment>
-      <Comment.Avatar src='https://adorbs-as-a-service.herokuapp.com/api/v1/100/100h/' />
+      <Comment.Avatar src='https://adorbs-as-a-service.herokuapp.com/api/v1/420/420h/' />
       <Comment.Content>
         <Comment.Author as='a'>Joe Henderson</Comment.Author>
         <Comment.Metadata>
