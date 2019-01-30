@@ -5,12 +5,13 @@ body {
   linear-gradient(315deg, rgb(0, 0, 0) 25%, transparent 25%),
   linear-gradient(45deg, rgb(0, 0, 0) 25%, transparent 25%);	
   background-size: 100px 100px;
-  background-color: rgb(104, 104, 104)
+  background-color: rgb(104, 104, 104);
 }
 
 .splash {
     width: 40vw;
     margin: auto;
+    margin-top: 8%;
 }
 
 a {
@@ -20,6 +21,33 @@ a {
 a:hover {
   color: white;
 }
+
+/* Make text white */
+
+.ui.items>.item>.content>a.header {
+  color: white;
+}
+
+.ui.comments .comment .author {
+  color: white;
+}
+
+.ui.header {
+  color: white;
+}
+
+.ui.comments .comment .text {
+  color: white;
+}
+
+.ui.comments .comment .metadata {
+  color: rgb(190, 190, 190);
+}
+
+.ui.comments .comment .actions a {
+  color: rgb(190, 190, 190);
+}
+
 
 .ui.comments .reply.form textarea {
   background-color: darkred;
@@ -69,4 +97,15 @@ a:hover {
 .ui.menu {
   background: rgb(255, 147, 147);
   margin: 0;
+}
+
+.ui.items>.item>.content {
+  padding: 4%;
+  padding-bottom: 0;
+  color: white;
+}
+
+.ui.comments {
+  padding: 4%;
+  padding-top: 0;
 }
