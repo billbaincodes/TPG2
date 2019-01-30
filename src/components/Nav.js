@@ -1,26 +1,41 @@
-import React, { Component } from "react";
-import {Link} from 'react-router-dom'
+import React, { Component } from 'react'
+import { Menu } from 'semantic-ui-react'
+import tpLogo from '../assets/tp-logo.png'
 
-class Nav extends Component {
+export default class MenuExampleStackable extends Component {
+  state = {}
+
+  handleItemClick = (e, { name }) => this.setState({ activeItem: name })
+
   render() {
+    const { activeItem } = this.state
+
     return (
-      <div className="App">
-        <div class="ui red inverted medium top bound menu">
-          <div class="ui container">
-            <a class="active item">Home</a> <a class="item">Work</a>
-            <a class="item">Company</a> <a class="item">Careers</a>
-            <div class="right menu">
-              <Link to="/">
-              <div class="item">
-                <a class="ui button">Sign Out</a>
-              </div>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </div>
-    );
+      <Menu stackable>
+        <Menu.Item>
+          <img src={tpLogo} />
+        </Menu.Item>
+
+        <Menu.Item
+          name='features'
+          active={activeItem === 'features'}
+          onClick={this.handleItemClick}
+        >
+          Features
+        </Menu.Item>
+
+        <Menu.Item
+          name='testimonials'
+          active={activeItem === 'testimonials'}
+          onClick={this.handleItemClick}
+        >
+          Testimonials
+        </Menu.Item>
+
+        <Menu.Item name='sign-in' active={activeItem === 'sign-in'} onClick={this.handleItemClick}>
+          Sign-in
+        </Menu.Item>
+      </Menu>
+    )
   }
 }
-
-export default Nav;

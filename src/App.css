@@ -20,6 +20,13 @@ a {
 a:hover {
   color: white;
 }
+
+.ui.comments .reply.form textarea {
+  background-color: darkred;
+  color: white;
+}
+
+
 .ui.cards {
   justify-content: space-evenly;
   margin: 0;
@@ -49,4 +56,17 @@ a:hover {
 
 .ui.items>.item>.content>.description {
   color: white;
+}
+
+.comment-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(165, 0, 0);
+}
+
+.ui.menu {
+  background: rgb(255, 147, 147);
+  margin: 0;
 }
