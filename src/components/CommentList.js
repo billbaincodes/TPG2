@@ -87,13 +87,29 @@ export default CommentList
 
 
 //Temp comments
+
+/*
 let comments = [
-  {comment1: 
-    {
-      image: 'http',
-      author: 'Me',
-      date: '12-29-97',
-      text: 'Hello there friendo'
-    }
-  }
+  {
+    id: 1,
+    image: "http",
+    author: 1,
+    published: "Sat, July 1",
+    body: 'Hey, itsa me. The one you love to love and can\'t live without'
+  },
+  {
+    id: 2,
+    image: "http",
+    author: 2,
+    published: "Sat, July 1",
+    body: 'Hey, itsa me. The one you love to love and can\'t live without'
+  },
+  {
+    id: 3,
+    image: "http",
+    author: 3,
+    published: "Sat, July 1",
+    body: 'Hey, itsa me. The one you love to love and can\'t live without'
+  },
 ]
+*/
