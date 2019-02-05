@@ -17,8 +17,6 @@ class Feed extends Component {
 
   render() {
     return (
-      <div>
-        <Nav />
         <div className="feed">
           {this.state.loaded
             ? this.state.postList.map(post => {
@@ -27,10 +25,6 @@ class Feed extends Component {
             : "candy"}
 
         </div>
-        <div classname="friend-widget">
-        
-        </div>
-      </div>
     );
   }
 }

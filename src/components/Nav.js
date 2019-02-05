@@ -10,26 +10,28 @@ const MenuExampleAttached = () => (
     <Menu>
       <Menu.Item>
         <img src={TPlogo} alt="tp-logo" />
+        Twin Peaks Gazette
       </Menu.Item>
-      <Dropdown text="Menu" item simple>
-        <Dropdown.Menu>
-          <Link to="/feed">
-            <Dropdown.Item>Feed</Dropdown.Item>
-          </Link>
+      <Link to="/feed">
+        <Dropdown.Item>Feed</Dropdown.Item>
+      </Link>
 
-          <Link to="/feed">
-            <Dropdown.Item>Friends</Dropdown.Item>
-          </Link>
+      <Link to="/comments">
+        <Dropdown.Item>Friends</Dropdown.Item>
+      </Link>
 
-          <Link to="/feed">
-            <Dropdown.Item>Profile</Dropdown.Item>
-          </Link>
-          <Dropdown.Divider />
-          <Link to="/feed">
-            <Dropdown.Item>Sign Out</Dropdown.Item>
-          </Link>
-        </Dropdown.Menu>
-      </Dropdown>
+      <Link to="/compose">
+        <Dropdown.Item>
+          {" "}
+          <Icon name="compose" />
+        </Dropdown.Item>
+      </Link>
+      <Link to="/">
+        <Dropdown.Item>
+          {" "}
+          <Icon name="sign-out" />
+        </Dropdown.Item>
+      </Link>
     </Menu>
   </div>
 );
