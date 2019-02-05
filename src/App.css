@@ -122,3 +122,16 @@ a:hover {
 .ui.button {
   color: rgb(100, 0, 0);
 }
+
+.nav-link {
+  padding: 1rem;
+  -webkit-transition: background .1s ease,color .1s ease,-webkit-box-shadow .1s ease;
+  -webkit-transition: background .1s ease,box-shadow .1s ease,color .1s ease;
+  transition: background-color .5s
+}
+
+.nav-link:hover {
+  -webkit-transition: background-color darkred;
+  -webkit-transition: background-color darkred;
+  background-color: darkred;
+}

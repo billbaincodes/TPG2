@@ -5,7 +5,7 @@ import Nav from './Nav'
 class CommentList extends Component {
 
   constructor() {
-    this.super()
+    super()
     this.state = {
       comments: {}
     }

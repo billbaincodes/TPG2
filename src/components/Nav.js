@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Menu } from 'semantic-ui-react'
 import tpLogo from '../assets/tp-logo.png'
+import { Link } from 'react-router-dom'
 
 export default class MenuExampleStackable extends Component {
   state = {}
@@ -16,25 +17,18 @@ export default class MenuExampleStackable extends Component {
           <img alt="site-logo" src={tpLogo} />
         </Menu.Item>
 
-        <Menu.Item
-          name='features'
-          active={activeItem === 'features'}
-          onClick={this.handleItemClick}
-        >
+        <Link class="nav-link" to="/feed">
           Feed
-        </Menu.Item>
+        </Link>
 
-        <Menu.Item
-          name='testimonials'
-          active={activeItem === 'testimonials'}
-          onClick={this.handleItemClick}
-        >
-          Profile
-        </Menu.Item>
 
-        <Menu.Item name='sign-in' active={activeItem === 'sign-in'} onClick={this.handleItemClick}>
+        <Link class="nav-link" to="/feed">
           Friends
-        </Menu.Item>
+        </Link>
+
+        <Link class="nav-link" to="/feed">
+          Profile
+        </Link>
       </Menu>
     )
   }
