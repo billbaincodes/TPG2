@@ -9,7 +9,8 @@ body {
 }
 
 .splash {
-    width: 40vw;
+    width: 50vw;
+    min-width: 20rem;
     margin: auto;
     margin-top: 8%;
 }
@@ -55,11 +56,6 @@ a:hover {
 }
 
 
-.ui.cards {
-  justify-content: space-evenly;
-  margin: 0;
-  width: 100%;
-}
 
 .ui.card,
 .ui.cards>.card {
@@ -67,16 +63,15 @@ a:hover {
   background-color: rgb(110, 0, 0);
   border: black solid 1px;
   box-shadow:none;
+  transition: background-color .5s;
 }
 
 .ui.card:hover {
   background-color: rgb(184, 0, 0);
 }
 
-.feed {
-  width: 60vw;
-  margin: auto;
-  display: flex;
+.ui.cards {
+  width: 100vw;
 }
 
 .ui.divided.items>.item {
@@ -97,6 +92,10 @@ a:hover {
 .ui.menu {
   background: rgb(165, 0, 0);
   margin: 0;
+}
+
+.ui.menu .item{
+  background: rgb(165, 0, 0);
 }
 
 .ui.items>.item>.content {
@@ -123,6 +122,10 @@ a:hover {
   color: rgb(100, 0, 0);
 }
 
+.nav-title {
+  color: white;
+}
+
 .nav-link {
   padding: 1rem;
   -webkit-transition: background .1s ease,color .1s ease,-webkit-box-shadow .1s ease;
@@ -134,4 +137,75 @@ a:hover {
   -webkit-transition: background-color darkred;
   -webkit-transition: background-color darkred;
   background-color: darkred;
+}
+
+.ui.simple.active.dropdown>.menu, .ui.simple.dropdown:hover>.menu {
+  border: none;
+}
+
+.ui.dropdown .menu>.divider {
+  background-color: darkred;
+  margin: 0;
+}
+
+.ui.dropdown .menu {
+  background-color: rgb(165, 0, 0);
+}
+
+.post {
+  background-color: darkred;
+  color: white;
+  flex-direction: column;
+  align-content: center;
+  margin-top: 1rem;
+}
+
+.post-avatar {
+  height:4rem;
+  width: 4rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 1rem;
+}
+
+.post-header {
+  height: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
+}
+
+.post-username {
+  font-size: 1.4rem;
+}
+
+.post-metadata {
+  padding: 1rem;
+  padding-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.post-title {
+  font-size: 1.4rem;
+}
+
+.post-body {
+  padding: 1rem;
+}
+
+.post-image {
+  width: 100%;
+  height: auto;
+}
+
+.feed {
+  width: 60vw;
+  display:flex;
+  flex-direction: column;
+  align-content: center;
+  margin: 0 auto;
 }

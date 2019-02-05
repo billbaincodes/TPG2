@@ -1,35 +1,37 @@
-import React, { Component } from 'react'
-import { Menu } from 'semantic-ui-react'
-import tpLogo from '../assets/tp-logo.png'
-import { Link } from 'react-router-dom'
+import React from "react";
+import { Link } from "react-router-dom";
+import { Dropdown, Icon, Menu, Segment } from "semantic-ui-react";
+import TPlogo from "../assets/tp-logo.png";
 
-export default class MenuExampleStackable extends Component {
-  state = {}
+// TODO: Update <Search> usage after its will be implemented
 
-  handleItemClick = (e, { name }) => this.setState({ activeItem: name })
+const MenuExampleAttached = () => (
+  <div>
+    <Menu>
+      <Menu.Item>
+        <img src={TPlogo} alt="tp-logo" />
+      </Menu.Item>
+      <Dropdown text="Menu" item simple>
+        <Dropdown.Menu>
+          <Link to="/feed">
+            <Dropdown.Item>Feed</Dropdown.Item>
+          </Link>
 
-  render() {
-    const { activeItem } = this.state
+          <Link to="/feed">
+            <Dropdown.Item>Friends</Dropdown.Item>
+          </Link>
 
-    return (
-      <Menu stackable>
-        <Menu.Item>
-          <img alt="site-logo" src={tpLogo} />
-        </Menu.Item>
+          <Link to="/feed">
+            <Dropdown.Item>Profile</Dropdown.Item>
+          </Link>
+          <Dropdown.Divider />
+          <Link to="/feed">
+            <Dropdown.Item>Sign Out</Dropdown.Item>
+          </Link>
+        </Dropdown.Menu>
+      </Dropdown>
+    </Menu>
+  </div>
+);
 
-        <Link class="nav-link" to="/feed">
-          Feed
-        </Link>
-
-
-        <Link class="nav-link" to="/feed">
-          Friends
-        </Link>
-
-        <Link class="nav-link" to="/feed">
-          Profile
-        </Link>
-      </Menu>
-    )
-  }
-}
+export default MenuExampleAttached;

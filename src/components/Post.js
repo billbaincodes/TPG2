@@ -1,33 +1,24 @@
-import React, { Component } from "react";
-import { Link } from 'react-router-dom'
-import { Card, Icon } from "semantic-ui-react";
-import Nav from "./Nav";
+import React from "react";
+import { Comment } from "semantic-ui-react";
 
-class Post extends Component {
-  render() {
-    return (
-      <Link to="/comments">
-
-      <div className="ui card">
-        <div className="content">
-          <div className="right floated meta">14h</div>
-          <img className="ui avatar image" src="https://adorbs-as-a-service.herokuapp.com/api/v1/50w/50h/" /> Elliot
-        </div>
-        <div className="image">
-          <img src="https://adorbs-as-a-service.herokuapp.com/api/v1/400w/400h/" />
-        </div>
-        <div className="content">
-          <span className="right floated">
-            <i className="heart outline like icon"></i>
-            17 likes
-          </span>
-          <i className="comment icon"></i>
-          3 comments
-        </div>
-      </div>
-      </Link>
-    );
-  }
-}
+const Post = ({ postData }) => (
+  <div className="post">
+    <div className="post-header">
+      <img className="post-avatar" src={postData.avatarURL} alt="avatar" />
+      <div className="post-username">{postData.handle}</div>
+    </div>
+    <img className="post-image" src={postData.imageURL} alt="post" />
+    <div className="post-metadata">
+      <div className="post-title">{postData.title}</div>
+      <a>
+        <i aria-hidden="true" class="heart icon" />
+        22 Likes
+      </a>
+    </div>
+    <div className="post-body">
+      <p>{postData.body}</p>
+    </div>
+  </div>
+);
 
 export default Post;
