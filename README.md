@@ -1,2 +1,8 @@
-## Twin Peaks Gazette 2.0
-Social media app set in Twin Peaks, WA. built with React.
+# Twin Peaks Gazette
+A basic social media app set in the bizarre town of Twin Peaks, WA. Allows users to view posts, as well as create and delete posts to a persistent backend. Back end is built with Node.js and Express. PostgreSQL database and querys built with Knex. Front end is React.js along with custom ES6 and CSS3.
+
+## Deployed Link
+https://twinpeaksgazette.surge.sh/
+
+## Backend Repo
+https://github.com/billbaincodes/tp-classic-back
