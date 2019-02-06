@@ -13,15 +13,16 @@ body {
     min-width: 20rem;
     margin: auto;
     margin-top: 8%;
+    text-align: center;
 }
 
 .splash-title {
   /* display: inline-block; */
   /* vertical-align: center; */
-  font-size: 4rem;
+  font-size: 5.6rem;
   -webkit-text-fill-color: darkred; /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: rgb(226, 0, 0);
+  -webkit-text-stroke-color: rgb(0, 196, 0);
   margin: 0 auto;
 }
 
@@ -146,35 +147,41 @@ a:hover {
   color: rgb(100, 0, 0);
 }
 
+.nav-logo {
+  font-size: 1.2rem;
+  filter: invert(100%)
+}
+
 .nav-title {
   color: white;
+  font-size: 1.6rem;
+  margin: 0 2rem 0 .5rem;
 }
 
-.nav-link {
-  padding: 1rem;
-  -webkit-transition: background .1s ease,color .1s ease,-webkit-box-shadow .1s ease;
-  -webkit-transition: background .1s ease,box-shadow .1s ease,color .1s ease;
-  transition: background-color .5s
+.nav-item {
+  font-size: 1.7vw;
+  margin: 0.5rem 0 0 1rem ;
+  transition: color .5s;
 }
 
-.nav-link:hover {
-  -webkit-transition: background-color darkred;
-  -webkit-transition: background-color darkred;
-  background-color: darkred;
+.nav-item:hover {
+  color: rgb(87, 0, 0)
 }
 
-.ui.simple.active.dropdown>.menu, .ui.simple.dropdown:hover>.menu {
-  border: none;
+@media screen and (max-width: 601px) {
+
+  .nav-item:hover {
+    color: pink;
+  }
+
+  .splash-title {
+    font-size: 4rem;
+  }
+
 }
 
-.ui.dropdown .menu>.divider {
-  background-color: darkred;
-  margin: 0;
-}
 
-.ui.dropdown .menu {
-  background-color: rgb(165, 0, 0);
-}
+
 
 .post {
   background-color: darkred;
@@ -266,15 +273,6 @@ a:hover {
   color: white;
 }
 
-.nav-item {
-  font-size: 2rem;
-  margin-left: 1rem;
-  transition: color .5s;
-}
-
-.nav-item:hover {
-  color: rgb(87, 0, 0)
-}
 .ui.menu {
   align-items: center;
 }

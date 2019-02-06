@@ -9,17 +9,14 @@ const MenuExampleAttached = () => (
   <div>
     <Menu>
       <Menu.Item>
-        <img src={TPlogo} alt="tp-logo" />
-        Twin Peaks Gazette
+        <img className="nav-logo" src={TPlogo} alt="tp-logo" />
+        <h2 className="nav-title">Twin Peaks Gazette</h2>
       </Menu.Item>
 
       <Link className="nav-item" to="/feed">
         <Icon name="home" />
       </Link>
 
-      {/* <Link className="nav-item" to="/friends">
-        <Icon name="users" />
-      </Link> */}
 
       <Link className="nav-item" to="/compose">
         <Icon name="compose" />
