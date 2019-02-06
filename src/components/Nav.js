@@ -13,10 +13,10 @@ const MenuExampleAttached = () => (
         <h2 className="nav-title">Twin Peaks Gazette</h2>
       </Menu.Item>
 
+    <Menu.Menu position="right">
       <Link className="nav-item" to="/feed">
         <Icon name="home" />
       </Link>
-
 
       <Link className="nav-item" to="/compose">
         <Icon name="compose" />
@@ -25,6 +25,7 @@ const MenuExampleAttached = () => (
       <Link className="nav-item" to="/">
         <Icon name="sign-out" />
       </Link>
+      </Menu.Menu>
     </Menu>
   </div>
 );

@@ -24,7 +24,6 @@ class LoginList extends Component {
 
   render(){
   return(
-    <div>
       <Accordion styled>
         <Accordion.Title active={this.state.activeIndex === 0} index={0} onClick={this.handleClick}>
           <Icon name='dropdown' />
@@ -50,7 +49,6 @@ class LoginList extends Component {
           </p>
         </Accordion.Content>
       </Accordion>
-    </div>
   )}
 }
 

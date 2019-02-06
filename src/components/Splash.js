@@ -41,7 +41,7 @@ class Splash extends Component {
         <h1 className="splash-title">Twin Peaks Gazette</h1>
         <div class="column">
           <form class="ui large form">
-            <div class="ui red segment">
+            <div class="ui segment">
               <div class="field">
                 <div class="ui left icon input">
                   <i class="user icon" />

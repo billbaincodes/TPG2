@@ -1,19 +1,18 @@
 body {
-  background: 
-  linear-gradient(135deg, rgb(0, 0, 0) 25%, transparent 25%) -50px 0,
-  linear-gradient(225deg, rgb(0, 0, 0) 25%, transparent 25%) -50px 0,
-  linear-gradient(315deg, rgb(0, 0, 0) 25%, transparent 25%),
-  linear-gradient(45deg, rgb(0, 0, 0) 25%, transparent 25%);	
+  background: linear-gradient(135deg, rgb(0, 0, 0) 25%, transparent 25%) -50px 0,
+    linear-gradient(225deg, rgb(0, 0, 0) 25%, transparent 25%) -50px 0,
+    linear-gradient(315deg, rgb(0, 0, 0) 25%, transparent 25%),
+    linear-gradient(45deg, rgb(0, 0, 0) 25%, transparent 25%);
   background-size: 100px 100px;
   background-color: rgb(104, 104, 104);
 }
 
 .splash {
-    width: 50vw;
-    min-width: 20rem;
-    margin: auto;
-    margin-top: 8%;
-    text-align: center;
+  width: 50vw;
+  min-width: 20rem;
+  margin: auto;
+  margin-top: 8%;
+  text-align: center;
 }
 
 .splash-title {
@@ -24,6 +23,9 @@ body {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: rgb(0, 196, 0);
   margin: 0 auto;
+}
+p {
+  color: white;
 }
 
 a {
@@ -36,7 +38,7 @@ a:hover {
 
 /* Make text white */
 
-.ui.items>.item>.content>a.header {
+.ui.items > .item > .content > a.header {
   color: white;
 }
 
@@ -60,20 +62,21 @@ a:hover {
   color: rgb(190, 190, 190);
 }
 
-
 .ui.comments .reply.form textarea {
   background-color: rgba(43, 0, 0, 0.363);
   color: white;
 }
 
-.ui.checkbox label, .ui.checkbox+label {
+.ui.checkbox label,
+.ui.checkbox + label {
   color: white;
 }
-.ui.checkbox input:focus~label {
+.ui.checkbox input:focus ~ label {
   color: white;
 }
 
-.ui.checkbox label:hover, .ui.checkbox+label:hover {
+.ui.checkbox label:hover,
+.ui.checkbox + label:hover {
   color: white;
 }
 
@@ -83,12 +86,12 @@ a:hover {
 }
 
 .ui.card,
-.ui.cards>.card {
+.ui.cards > .card {
   color: white;
   background-color: rgb(110, 0, 0);
   border: black solid 1px;
-  box-shadow:none;
-  transition: background-color .5s;
+  box-shadow: none;
+  transition: background-color 0.5s;
 }
 
 .ui.card:hover {
@@ -99,11 +102,11 @@ a:hover {
   width: 100vw;
 }
 
-.ui.divided.items>.item {
+.ui.divided.items > .item {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.ui.items>.item>.content>.description {
+.ui.items > .item > .content > .description {
   color: white;
 }
 
@@ -119,22 +122,22 @@ a:hover {
   margin: 0;
 }
 
-.ui.menu .item{
+.ui.menu .item {
   background: rgb(165, 0, 0);
 }
 
-.ui.items>.item>.content {
+.ui.items > .item > .content {
   margin-top: 0%;
   padding: 1%;
   color: white;
-  background: rgba(139, 0, 0, .75);
+  background: rgba(139, 0, 0, 0.75);
   border: 1px solid black;
 }
 
 .ui.comments {
   margin-top: 0%;
   padding: 1%;
-  background: rgba(139, 0, 0, .75);
+  background: rgba(139, 0, 0, 0.75);
   border: 1px solid black;
 }
 
@@ -149,39 +152,28 @@ a:hover {
 
 .nav-logo {
   font-size: 1.2rem;
-  filter: invert(100%)
+  filter: invert(100%);
 }
 
 .nav-title {
   color: white;
   font-size: 1.6rem;
-  margin: 0 2rem 0 .5rem;
+  margin: 0 2rem 0 0.5rem;
 }
 
 .nav-item {
-  font-size: 1.7vw;
-  margin: 0.5rem 0 0 1rem ;
-  transition: color .5s;
+  font-size: 1.7rem;
+  margin: 0.5rem 0 0 1rem;
+  transition: color 0.5s;
+}
+
+.nav-item:last-child {
+  margin-right: 1rem;
 }
 
 .nav-item:hover {
-  color: rgb(87, 0, 0)
+  color: rgb(87, 0, 0);
 }
-
-@media screen and (max-width: 601px) {
-
-  .nav-item:hover {
-    color: pink;
-  }
-
-  .splash-title {
-    font-size: 4rem;
-  }
-
-}
-
-
-
 
 .post {
   background-color: darkred;
@@ -193,8 +185,8 @@ a:hover {
 }
 
 .post-avatar {
-  height:4rem;
   width: 4rem;
+  height: 4rem;
   border-radius: 50%;
   object-fit: cover;
   margin-right: 1rem;
@@ -208,7 +200,7 @@ a:hover {
 
 .post-header {
   height: 100%;
-  padding: 1rem;
+  padding: 0.7rem;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -226,9 +218,8 @@ a:hover {
 }
 
 .post-username {
-  font-size: 1.4rem;
+  font-size: 2rem;
 }
-
 
 .post-metadata {
   padding: 1rem;
@@ -253,7 +244,7 @@ a:hover {
 
 .feed {
   width: 60vw;
-  display:flex;
+  display: flex;
   flex-direction: column;
   align-content: center;
   margin: 0 auto;
@@ -269,7 +260,7 @@ a:hover {
   color: white;
 }
 
-.ui.form .field>label {
+.ui.form .field > label {
   color: white;
 }
 
@@ -280,4 +271,52 @@ a:hover {
 .login-list {
   display: flex;
   flex-direction: column;
+}
+
+.ui.styled.accordion,
+.ui.styled.accordion .accordion {
+  width: 100%;
+  text-align: left;
+  background-color: darkred;
+}
+
+.ui.styled.accordion .title {
+  color: white;
+}
+
+.ui.styled.accordion .active.title {
+  color: white;
+  transition: color 0.5s;
+}
+
+.ui.styled.accordion .title:hover {
+  color: rgb(179, 179, 179);
+}
+
+.ui.segment {
+  background-color: darkred;
+}
+
+
+@media screen and (max-width: 500px) {
+  .nav-title {
+    display: none;
+  }
+
+  .splash-title {
+    font-size: 4rem;
+  }
+
+  .post-avatar {
+    width: 4vh;
+    height: auto;
+  }
+
+  .post-username {
+    font-size: 1rem;
+  }
+
+  .post-options {
+    font-size:1rem;
+  }
 }
