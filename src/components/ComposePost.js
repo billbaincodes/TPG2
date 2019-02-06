@@ -1,33 +1,76 @@
 import React, { Component } from "react";
 import { Form } from "semantic-ui-react";
+import { Redirect } from 'react-router-dom'
+import Nav from "./Nav.js"
 
-const options = [
-  { key: "m", text: "Male", value: "male" },
-  { key: "f", text: "Female", value: "female" }
-];
+class ComposePost extends Component {
+  state = {
+    title: '',
+    imageURL: '',
+    body: ''
+  };
 
-class FormExampleSubcomponentControl extends Component {
-  state = {};
+  titleHandler = (e) => {
+    e.preventDefault()
+    this.setState({title: e.target.value})
+    console.log(this.state.title)
+  }
 
-  handleChange = (e, { value }) => this.setState({ value });
+  imageURLHandler = (e) => {
+    e.preventDefault()
+    this.setState({imageURL: e.target.value})
+    console.log(this.state.imageURL)
+  }
+
+  bodyHandler = (e) => {
+    e.preventDefault()
+    this.setState({body: e.target.value})
+    console.log(this.state.body)
+  }
+
+  submitPost = (e) => {
+    e.preventDefault()
+
+    fetch("https://tp-classic-back.herokuapp.com/posts", {
+        method: "POST",
+        mode: "cors",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          title: this.state.title,
+          imageURL: this.state.imageURL,
+          body: this.state.body,
+          character_id: 4
+        })
+      })
+        .then(response => response.json())
+        .then(json => window.location.assign("http://localhost:3000/feed"));
+
+
+
+  }
 
   render() {
-    const { value } = this.state;
     return (
-      <Form className="compose-form">
-        <Form.Group widths="equal">
-          <Form.Input fluid label="Title" placeholder="Title" />
-          <Form.Input fluid label="Image URL" placeholder="Image URL" />
-        </Form.Group>
-        <Form.TextArea
-          label="Caption"
-          placeholder="Tell us more about this picture..."
-        />
-        <Form.Checkbox label="I agree to the Terms and Conditions" />
-        <Form.Button>Submit</Form.Button>
-      </Form>
+      <div>
+      <Nav />
+        <Form className="compose-form">
+          <Form.Group widths="equal">
+            <Form.Input onChange={this.titleHandler} fluid label="Title" placeholder="Title" />
+            <Form.Input onChange={this.imageURLHandler} fluid label="Image URL" placeholder="Image URL" />
+          </Form.Group>
+          <Form.TextArea
+            onChange={this.bodyHandler}
+            label="Caption"
+            placeholder="Tell us more about this picture..."
+          />
+          <Form.Checkbox label="I agree to the Terms and Conditions" />
+          <Form.Button onClick={this.submitPost}>Submit</Form.Button>
+        </Form>
+      </div>
     );
   }
 }
 
-export default FormExampleSubcomponentControl;
+export default ComposePost;

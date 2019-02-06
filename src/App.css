@@ -55,6 +55,17 @@ a:hover {
   color: white;
 }
 
+.ui.checkbox label, .ui.checkbox+label {
+  color: white;
+}
+.ui.checkbox input:focus~label {
+  color: white;
+}
+
+.ui.checkbox label:hover, .ui.checkbox+label:hover {
+  color: white;
+}
+
 
 
 .ui.card,
@@ -215,7 +226,26 @@ a:hover {
 .compose-form {
   width: 60vw;
   margin: 0 auto;
+  margin-top: 1rem;
   background: darkred;
+  border: 1px solid black;
   padding: 1rem;
   color: white;
+}
+
+.ui.form .field>label {
+  color: white;
+}
+
+.nav-item {
+  font-size: 2rem;
+  margin-left: 1rem;
+  transition: color .5s;
+}
+
+.nav-item:hover {
+  color: rgb(87, 0, 0)
+}
+.ui.menu {
+  align-items: center;
 }

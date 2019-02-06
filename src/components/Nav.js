@@ -12,25 +12,21 @@ const MenuExampleAttached = () => (
         <img src={TPlogo} alt="tp-logo" />
         Twin Peaks Gazette
       </Menu.Item>
-      <Link to="/feed">
-        <Dropdown.Item>Feed</Dropdown.Item>
+
+      <Link className="nav-item" to="/feed">
+        <Icon name="home" />
       </Link>
 
-      <Link to="/comments">
-        <Dropdown.Item>Friends</Dropdown.Item>
+      <Link className="nav-item" to="/friends">
+        <Icon name="users" />
       </Link>
 
-      <Link to="/compose">
-        <Dropdown.Item>
-          {" "}
-          <Icon name="compose" />
-        </Dropdown.Item>
+      <Link className="nav-item" to="/compose">
+        <Icon name="compose" />
       </Link>
-      <Link to="/">
-        <Dropdown.Item>
-          {" "}
-          <Icon name="sign-out" />
-        </Dropdown.Item>
+
+      <Link className="nav-item" to="/">
+        <Icon name="sign-out" />
       </Link>
     </Menu>
   </div>
