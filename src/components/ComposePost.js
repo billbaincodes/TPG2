@@ -45,7 +45,7 @@ class ComposePost extends Component {
         })
       })
         .then(response => response.json())
-        .then(json => window.location.assign("http://localhost:3000/feed"));
+        .then(json => window.location.assign("https://twinpeaksgazette.surge.sh/feed"));
 
 
 

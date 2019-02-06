@@ -29,7 +29,7 @@ class Splash extends Component {
       this.state.username === "DamnFineCoffee" &&
       this.state.password === "t1b3t"
     ) {
-      window.location.assign("http://localhost:3000/feed");
+      window.location.assign("https://twinpeaksgazette.surge.sh/feed");
     } else {
       alert("Invalid User/Pass");
     }
