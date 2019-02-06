@@ -1,6 +1,8 @@
 import React from "react";
-import { Link } from 'react-router-dom'
-import logo from '../assets/tp-logo.png'
+import { Card } from "semantic-ui-react";
+import { Link } from "react-router-dom";
+import logo from "../assets/tp-logo.png";
+import LoginList from './LoginList.js'
 
 const Splash = () => {
   return (
@@ -22,14 +24,12 @@ const Splash = () => {
               </div>
             </div>
             <Link to="/feed">
-            <div class="ui fluid large red submit button">
-              Log In 
-            </div>
+              <div class="ui fluid large red submit button">Log In</div>
             </Link>
           </div>
-
           <div class="ui error message" />
         </form>
+        <LoginList />
       </div>
     </div>
   );

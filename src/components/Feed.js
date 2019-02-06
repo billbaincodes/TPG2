@@ -35,9 +35,7 @@ class Feed extends Component {
         .catch(console.log("error"));
     }
     else {
-
       alert('Please choose one of your own posts.')
-
     }};
 
   render() {

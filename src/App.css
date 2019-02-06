@@ -76,7 +76,10 @@ a:hover {
   color: white;
 }
 
-
+.login-card {
+  background: darkred;
+  color: white;
+}
 
 .ui.card,
 .ui.cards>.card {
@@ -274,4 +277,9 @@ a:hover {
 }
 .ui.menu {
   align-items: center;
+}
+
+.login-list {
+  display: flex;
+  flex-direction: column;
 }
