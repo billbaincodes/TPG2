@@ -1,10 +1,18 @@
 import React from "react";
 
-const Post = ({ postData }) => (
+const Post = ({ postData, deletePost }) => (
+
+
+
   <div className="post">
-    <div className="post-header">
-      <img className="post-avatar" src={postData.avatarURL} alt="avatar" />
-      <div className="post-username">{postData.handle}</div>
+    <div className="post-top">
+      <div className="post-header">
+        <img className="post-avatar" src={postData.avatarURL} alt="avatar" />
+        <div className="post-username">{postData.handle}</div>
+      </div>
+      <a onClick={() => deletePost(postData.post_id)} className="post-options">
+          <i aria-hidden="true" class="remove circle icon" />
+        </a>
     </div>
     <img className="post-image" src={postData.imageURL} alt="post" />
 

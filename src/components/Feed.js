@@ -11,9 +11,28 @@ class Feed extends Component {
   };
 
   componentDidMount() {
+    this.updateFeed()
+  }
+
+  updateFeed = () => {
     fetch("https://tp-classic-back.herokuapp.com/posts")
+    .then(response => response.json())
+    .then(json => this.setState({ postList: json.posts, loaded: true }));
+  }
+
+  deletePost = (num) => {
+    fetch(`https://tp-classic-back.herokuapp.com/posts/${num}`, {
+      method: "DELETE",
+      mode: "cors",
+      headers: {
+        "Content-Type": "application/json"
+      }
+    })
       .then(response => response.json())
-      .then(json => this.setState({ postList: json.posts, loaded: true }));
+      .then(json => console.log(json))
+      .then(this.updateFeed)
+      .catch(console.log("error"))
+
   }
 
   render() {
@@ -23,7 +42,10 @@ class Feed extends Component {
         <div className="feed">
           {this.state.loaded
             ? this.state.postList.map(post => {
-                return <Post postData={post} />;
+                return <Post  key={post.post_id}
+                              postData={post}
+                              deletePost={this.deletePost}
+                        />;
               })
             : <Loader active inline='centered' />}
         </div>

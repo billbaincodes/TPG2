@@ -5,10 +5,8 @@ import logo from '../assets/tp-logo.png'
 const Splash = () => {
   return (
     <div class="ui splash">
+      <h1 className="splash-title">Welcome to Twin Peaks</h1>
       <div class="column">
-        <h2 class="ui red image header">
-          <div class="content">Log-in to your account</div>
-        </h2>
         <form class="ui large form">
           <div class="ui red segment">
             <div class="field">

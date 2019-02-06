@@ -17,9 +17,9 @@ const MenuExampleAttached = () => (
         <Icon name="home" />
       </Link>
 
-      <Link className="nav-item" to="/friends">
+      {/* <Link className="nav-item" to="/friends">
         <Icon name="users" />
-      </Link>
+      </Link> */}
 
       <Link className="nav-item" to="/compose">
         <Icon name="compose" />
