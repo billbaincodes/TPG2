@@ -10,7 +10,7 @@ const Post = ({ postData, deletePost }) => (
         <img className="post-avatar" src={postData.avatarURL} alt="avatar" />
         <div className="post-username">{postData.handle}</div>
       </div>
-      <a onClick={() => deletePost(postData.post_id)} className="post-options">
+      <a onClick={() => deletePost(postData.post_id, postData.character_id)} className="post-options">
           <i aria-hidden="true" class="remove circle icon" />
         </a>
     </div>
