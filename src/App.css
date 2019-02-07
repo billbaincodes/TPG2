@@ -307,9 +307,20 @@ a:hover {
     font-size: 4rem;
   }
 
+  .feed {
+    width: 100vw;
+    margin: 0 auto;
+  }
+
   .post-avatar {
     width: 4vh;
-    height: auto;
+    height: 4vh;
+  }
+
+  .post {
+    margin: 0;
+    border-bottom: 0;
+    border-color: rgb(80, 0, 0);
   }
 
   .post-username {
