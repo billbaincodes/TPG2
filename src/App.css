@@ -330,4 +330,9 @@ a:hover {
   .post-options {
     font-size:1rem;
   }
+
+  .compose-form {
+    width: 90vw;
+  }
+
 }
