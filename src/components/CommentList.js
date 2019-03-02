@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import { Button, Icon, Image, Item, Label, Comment, Form, Header } from 'semantic-ui-react'
 import Nav from './Nav'
+let imageLink = 'https://adorbs-as-a-service.herokuapp.com/api/v1/420/420h/'
 
 class CommentList extends Component {
 
@@ -37,7 +38,7 @@ class CommentList extends Component {
         </Header>
     
         <Comment>
-          <Comment.Avatar src='https://adorbs-as-a-service.herokuapp.com/api/v1/420/420h/' />
+          <Comment.Avatar src={imageLink} />
           <Comment.Content>
             <Comment.Author as='a'>Matt</Comment.Author>
             <Comment.Metadata>
@@ -48,7 +49,7 @@ class CommentList extends Component {
         </Comment>
     
         <Comment>
-          <Comment.Avatar src='https://adorbs-as-a-service.herokuapp.com/api/v1/420/420h/' />
+          <Comment.Avatar src={imageLink} />
           <Comment.Content>
             <Comment.Author as='a'>Elliot Fu</Comment.Author>
             <Comment.Metadata>
@@ -61,7 +62,7 @@ class CommentList extends Component {
         </Comment>
     
         <Comment>
-          <Comment.Avatar src='https://adorbs-as-a-service.herokuapp.com/api/v1/420/420h/' />
+          <Comment.Avatar src={imageLink} />
           <Comment.Content>
             <Comment.Author as='a'>Joe Henderson</Comment.Author>
             <Comment.Metadata>
