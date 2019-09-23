@@ -1,5 +1,5 @@
 # Twin Peaks Gazette
-A basic social media app set in the bizarre town of Twin Peaks, WA. Allows users to view, as well as create and delete, posts to a persistent backend. Responsive design meant to adapt fluidly to multiple sized devices.
+A basic social media app set in the bizarre town of Twin Peaks, WA. Allows users to view, as well as create and delete, posts to a persistent backend. Uses responsive design to adapt fluidly to multiple sized devices.
 
 
 ## Desktop
@@ -14,6 +14,7 @@ A basic social media app set in the bizarre town of Twin Peaks, WA. Allows users
 ## Tech
 * Front End
   * React.js
+  * Semantic UI
   * ES6
   * CSS3
   
@@ -22,6 +23,7 @@ A basic social media app set in the bizarre town of Twin Peaks, WA. Allows users
   * Node.js
   * Express
   * Knex
+  * Heroku
 
 ## Deployed Link
 https://twinpeaksgazette.surge.sh/
